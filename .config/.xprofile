@@ -1,0 +1,11 @@
+# Keyboard Layout
+setxkbmap pl &
+
+# Wallpaper
+#nitrogen --restore &
+
+# Compositor
+#picom -f &
+
+export PATH="$PATH:$HOME/.local/bin"
+
