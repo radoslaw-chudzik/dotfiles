@@ -1,19 +1,20 @@
-#!/bin/bash
+#!/bin/sh
 
 # Install dependencies
-sudo pacman -S git xorg-server xorg-apps xorg-xinit xorg-xmessage \
-> libx11 libxft libxinerama libxrandr libxss pkgconf
+paru -S xorg-server xorg-apps xorg-xinit xorg-xmessage \
+> libx11 libxft libxinerama libxrandr libxss
 
 mkdir -p ~/.config/xmonad && cd ~/.config/xmonad
 
 # Download XMonad sources
 git clone "https://github.com/xmonad/xmonad" xmonad-git
-git clone "https://github.com/xmonad/xmonad-contrib" xmonad-git
+git clone "https://github.com/xmonad/xmonad-contrib" xmonad-contrib-git
 
 # Download Xmobar sources
 # git clone "https://github.com/jaor/xmobar" xmobar-git
 
 # Add .desktop file for Lightdm or sddm 
+sudo mkdir /usr/share/xsessions
 cat > /usr/share/xsessions/xmonad.desktop << EOL
 line 1, [Desktop Entry]
 line 2, Version=1.0
@@ -34,4 +35,3 @@ paru -S stack
 cd ~/.config/xmonad
 stack init
 stack install
-
