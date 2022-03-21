@@ -14,7 +14,7 @@ git clone "https://github.com/xmonad/xmonad-contrib" xmonad-contrib-git
 # git clone "https://github.com/jaor/xmobar" xmobar-git
 
 # Add .desktop file for Lightdm or sddm 
-sudo mkdir /usr/share/xsessions
+sudo mkdir -p /usr/share/xsessions
 cat > /usr/share/xsessions/xmonad.desktop << EOL
 line 1, [Desktop Entry]
 line 2, Version=1.0
