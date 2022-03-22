@@ -10,9 +10,6 @@ mkdir -p ~/.config/xmonad && cd ~/.config/xmonad
 git clone "https://github.com/xmonad/xmonad" xmonad-git
 git clone "https://github.com/xmonad/xmonad-contrib" xmonad-contrib-git
 
-# Download Xmobar sources
-# git clone "https://github.com/jaor/xmobar" xmobar-git
-
 # Add .desktop file for Lightdm or sddm 
 sudo mkdir -p /usr/share/xsessions
 cat > /usr/share/xsessions/xmonad.desktop << EOL
