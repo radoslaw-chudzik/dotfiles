@@ -1,0 +1,42 @@
+window {
+  background-color: rgba(40, 40, 40, 0.5);
+  font-family: Sauce Code Pro Nerd Font;
+  font-size: 80px;
+}
+
+grid {
+  border-radius: 30px;
+  margin: 200px 400px;
+  padding: 10px;
+  background-color: #ebdbb2;
+}
+
+button {
+  border-radius: 20px;
+  border-width: 3px;
+  border-color: #282828;
+  outline-style: none;
+  margin: 10px;
+  padding: 40px;
+  background-repeat: no-repeat;
+  background-size: 0%;
+  background-position: center;
+  background-color: #282828;
+}
+
+button:focus,
+button:active {
+  border-color: #fabd2f;
+}
+
+#shutdown {
+  color: #cc241d;
+}
+
+#reboot {
+  color: #83a598;
+}
+
+#logout {
+  color: #b8bb26;
+}

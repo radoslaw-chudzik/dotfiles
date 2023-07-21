@@ -1,0 +1,11 @@
+{
+  "custom/power_profile": {
+    //shows the current power profile and switches to next on click
+    "exec": "~/.config/hypr/scripts/power_profile.sh",
+    "return-type": "json",
+    "interval": 20,
+    "format": "{}",
+    "on-click": "~/.config/hypr/scripts/power_profile.sh next",
+    "signal": 8
+  }
+}
