@@ -33,3 +33,7 @@ qBittorrent/
 vlc/
 
 QtProject.conf
+
+libvirt/storage/
+
+rog/
